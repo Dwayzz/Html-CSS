@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(212, 223, 223);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {width: 100%; 
+        height: 40vh; 
+        background-color: rgb(212, 223, 223);
+        background-image:url(images/finch_background.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
+header h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 5rem;
+        text-align: center;
+        color: rgba(10, 10, 100, .8);
+        text-shadow: 5px 5px black;
+        text-shadow: 2px 2px white;
+}
+
+header nav {
+    background-color: #d2dfdf;
+    background: linear-gradient(to bottom, #d2dfdf 0%,rgba(0, 0, 0, .85) 10%,rgba(0, 0, 0, .85) 90%,#d2dfdf 100%);;
+    height: auto;
+    padding: 10px;
+
+}  
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    width: 12%;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.68rem;
+}
+header nav a:link{color: white;}
+header nav a:visited{color: rgb(126, 126, 107)}
+header nav a:hover{color: yellow}
+
+[data-pop] {
+    font-style: monospace;
+    font-size: 1rem;
+    padding-bottom: 10px;
+    font-weight: bold;
+}   
+[data-pop=low]{
+    color:#333333;
+}
+[data-pop=high]{
+    color:purple
+}
+
+section li:last-child {
+    border-bottom: 1px dotted #333333;
+
+}
+
+.box { 
+    width: 35%;
+    height: auto;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid white; 
+    float:left;
+    margin: 0 10px 5px 0;
+ }
+
+footer {
+    clear: left;
+}
+
+section p::first-letter {
+    font-family: fantasy;
+    font-size: 125%;
+}
+
+section h2+p {
+    font-weight: bold;
+} 
+footer ul>li{
+    display: inline-block;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 120px;
+    padding: 10px;
+    background-color: #cccccc;
+
+}
+footer a{
+    display: inline-block;
+    max-width: 200px ;
+    text-align: center;
+    text-decoration: none;
+}
+
